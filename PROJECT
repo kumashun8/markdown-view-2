@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: crd-markdown-view
 repo: github/kumashun8/markdown-view-2
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kumashun8.github.io
+  group: view
+  kind: MarkdownView
+  path: github/kumashun8/markdown-view-2/api/v1
+  version: v1
 version: "3"
